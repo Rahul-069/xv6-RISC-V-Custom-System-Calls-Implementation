@@ -1,6 +1,6 @@
-# 🧠 xv6-RISC-V: Custom System Calls Implementation
+# 🧠 XV6-RISC-V: Custom System Calls Implementation
 
-This project extends the **xv6-riscv** operating system by implementing **three new system calls** and modifying the `fork` mechanism to support **argument passing**.  
+This project extends the **xv6-risc-v** operating system by implementing **three new system calls** and modifying the `fork` mechanism to support **argument passing**.  
 It demonstrates how to modify xv6's kernel, add new system calls, and test them using user-space programs.
 
 ---
