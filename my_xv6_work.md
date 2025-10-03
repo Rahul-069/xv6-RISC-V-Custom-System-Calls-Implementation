@@ -21,16 +21,16 @@ The following system calls were added:
 
 | **File** | **Change Description** |
 |----------|--------------------------|
-| `kernel/proc.c` | Implemented logic for `forkwitharg` and updated the fork system call to handle argument passing. |
-| `kernel/sysproc.c` | Added `sys_forkwitharg`, `sys_getforkarg`, and `sys_getppid` system call handler functions. |
-| `kernel/proc.h` | Added a new field `fork_arg` to the `struct proc`. Declared prototypes for new system calls. |
 | `kernel/syscall.h` | Added new syscall identifiers (`SYS_forkwitharg`, `SYS_getforkarg`, `SYS_getppid`). |
-| `kernel/syscall.c` | Linked the new system calls in the system call table. |
+| `kernel/proc.h` | Added a new field `fork_arg` to the `struct proc`. |
+| `kernel/proc.c` | Implemented logic for `forkwitharg` to handle argument passing during process creation. |
+| `kernel/sysproc.c` | Added `sys_forkwitharg`, `sys_getforkarg`, and `sys_getppid` system call handler functions. |
 | `kernel/defs.h` | Declared prototypes for the new system calls for kernel-wide use. |
+| `kernel/syscall.c` | Linked the new system calls in the system call table. |
 | `user/user.h` | Declared the new system calls for user-space programs. |
 | `user/usys.pl` | Added entries for `forkwitharg`, `getforkarg`, and `getppid` to generate syscall stubs. |
-| `user/fork.c` | Added a user program demonstrating the use of the new system calls. |
-| `user/Makefile` | Included `fork.c` in the list of user programs to compile. |
+| `user/fork.c` | Created a user program demonstrating the use of the new system calls. |
+| `user/Makefile` | Added the user program `_fork` to the list of programs to compile. |
 
 ---
 
