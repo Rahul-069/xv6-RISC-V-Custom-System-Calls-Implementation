@@ -240,7 +240,7 @@ entry("getppid");
 
 **File:** `user/fork.c`
 
-Create a comprehensive test program that demonstrates all three system calls with user input.
+Create a new user program that demonstrates all three system calls with user input.
 
 ```c
 #include "kernel/types.h"
