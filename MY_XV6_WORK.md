@@ -30,7 +30,7 @@ The following system calls were added:
 | `user/user.h` | Declared the new system calls for user-space programs. |
 | `user/usys.pl` | Added entries for `forkwitharg`, `getforkarg`, and `getppid` to generate syscall stubs. |
 | `user/fork.c` | Created a user program demonstrating the use of the new system calls. |
-| `user/Makefile` | Added the user program `fork` to the list of programs to compile. |
+| `Makefile` | Added the user program `fork` to the list of programs to compile. |
 
 ---
 
